@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        
+
         System.out.println("Ingrese nombre:");
         String nombre = scanner.nextLine();
 
@@ -17,7 +17,7 @@ public class Main {
 
 
 
-        Estudiante estudiante = new Estudiante("Benjamin", "Ingenieria en informatica", 20);
+        Estudiante estudiante = new Estudiante("Benjamin", "Informatica", 20);
         estudiante.mostrarInformacion();
     }
 }
