@@ -25,5 +25,9 @@ public class Main {
         }
 
         estudiante.mostrarInformacion();
+
+        for (int i = 1; i <= 5; i++){
+            System.out.println("Procesando estudiante" + i);
+        }
     }
 }
