@@ -5,13 +5,13 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese nombre:");
+        System.out.print("Ingrese nombre:");
         String nombre = scanner.nextLine();
 
-        System.out.println("Ingrese carrera:");
+        System.out.print("Ingrese carrera:");
         String carrera = scanner.nextLine();
 
-        System.out.println("Ingrese edad:");
+        System.out.print("Ingrese edad:");
         int edad = scanner.nextInt();
 
 
