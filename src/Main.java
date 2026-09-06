@@ -16,10 +16,12 @@ public class Main {
 
         Estudiante estudiante = new Estudiante(nombre, carrera, edad);
 
-        if (edad >= 18) {
-            System.out.println("Acceso autorizado");
+        if (edad < 18) {
+            System.out.println("Estudiante menor de edad");
+        } else if (edad < 25) {
+            System.out.println("Estudiante joven");
         } else {
-            System.out.println("Acesso restringido");
+            System.out.println("Estudiante adulto");
         }
 
         estudiante.mostrarInformacion();
