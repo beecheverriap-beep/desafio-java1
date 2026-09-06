@@ -5,7 +5,41 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Ingrese nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingrese carrera: ");
+        String carrera = scanner.nextLine();
+
+        System.out.print("Ingrese edad: ");
+        int edad = scanner.nextInt();
+
+        Estudiante estudiante = new Estudiante(nombre, carrera, edad);
+
+        estudiante.mostrarInformacion();
+
+
+        if (edad >= 18) {
+            System.out.println("Acceso autorizado.");
+        } else {
+            System.out.println("Acceso restringido.");
+        }
+
+
+        if (edad < 18) {
+            System.out.println("Estudiante menor de edad");
+        } else if (edad < 25) {
+            System.out.println("Estudiante joven");
+        } else {
+            System.out.println("Estudiante adulto");
+        }
+
+
+        for (int i = 1; i <= 5; i++){
+            System.out.println("Procesando estudiante" + i);
+
         int opcion = 0;
+
 
         while (opcion != 3) {
 
@@ -21,36 +55,14 @@ public class Main {
                 System.out.println("Sistema opetarativo");
             } else if (opcion == 2) {
                 System.out.println("Procesando operacion...");
-            } else if (opcion == 3) {
+            } else if (opcion == 3){
                 System.out.println("Cerrando sistema...");
-            }
+            } else
+                System.out.println("opcion no valida. Intente nuevamente");
         }
 
 
-        System.out.print("Ingrese nombre: ");
-        String nombre = scanner.nextLine();
-
-        System.out.print("Ingrese carrera: ");
-        String carrera = scanner.nextLine();
-
-        System.out.print("Ingrese edad: ");
-        int edad = scanner.nextInt();
-
-        Estudiante estudiante = new Estudiante(nombre, carrera, edad);
-
-        if (edad < 18) {
-            System.out.println("Estudiante menor de edad");
-        } else if (edad < 25) {
-            System.out.println("Estudiante joven");
-        } else {
-            System.out.println("Estudiante adulto");
-        }
-
-        estudiante.mostrarInformacion();
-
-        for (int i = 1; i <= 5; i++){
-            System.out.println("Procesando estudiante" + i);
             }
-
+        scanner.close();
     }
 }
