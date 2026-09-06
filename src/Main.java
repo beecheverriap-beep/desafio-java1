@@ -5,6 +5,28 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        int opcion = 0;
+
+        while (opcion != 3) {
+
+            System.out.println("=== SISTEMA DUOC ===");
+            System.out.println("1. Mostrar estado");
+            System.out.println("2. Procesar operación");
+            System.out.println("3. Salir");
+
+            System.out.print("Seleccione una opción: ");
+            opcion = scanner.nextInt();
+
+            if (opcion == 1) {
+                System.out.println("Sistema opetarativo");
+            } else if (opcion == 2) {
+                System.out.println("Procesando operacion...");
+            } else if (opcion == 3) {
+                System.out.println("Cerrando sistema...");
+            }
+        }
+
+
         System.out.print("Ingrese nombre: ");
         String nombre = scanner.nextLine();
 
@@ -28,6 +50,7 @@ public class Main {
 
         for (int i = 1; i <= 5; i++){
             System.out.println("Procesando estudiante" + i);
-        }
+            }
+
     }
 }
